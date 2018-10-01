@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <table border='1'>
+      <tr>
+        <th>번호</th>
+        <th>제목</th>
+        <th>작성자</th>
+        <th>작성시간</th>
+        </tr>
+        {% for i in data %}
+        <tr>
+        <th> {{ i[0] }}</th>
+        <th><a href='/view/{{ i[0] }}'>{{ i[1] }}</th></a>
+        <th> {{ i[3] }}</th>
+        <th> {{ i[4] }}</th>
+        </tr>
+        {% endfor %}
+        </table>
+        <a href='/rudfh'><input type='button' value='글작성'></a>
+        </body>
+        </html>
+
